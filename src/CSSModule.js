@@ -1,11 +1,11 @@
-import classNames from "classnames";
-import styles from "./CSSModule.module.css";
+import classNames from "classnames/bind";
+import styles from "./CSSModule.module.scss";
 
 const cx = classNames.bind(styles);
 
 const CSSModule = () => {
   // console.log(styles);
-  console.log(cx);
+  // console.log(cx);
   return (
     <div className={cx("wrapper", "inverted")}>
       안녕하세요, 저는 <span className="something">CSS Module!</span>
